@@ -1,0 +1,5 @@
+print('CALCULADORA DE ALUGUEL DE CARROS\n')
+dia = int(input('Quantos dias alugado? '))
+km = float(input('Quantos Km rodados? '))
+pago = (dia*80) + (km * 0.20)
+print(f'O total a pagar é de R${pago:.2f}')
