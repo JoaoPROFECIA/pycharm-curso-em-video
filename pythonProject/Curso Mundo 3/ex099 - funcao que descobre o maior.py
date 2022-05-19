@@ -1,7 +1,7 @@
 def linha30():
     msg = '-=' * 30
     print(msg)
-    
+
 def maior(* num):
     cont = maior = 0
     linha30()
