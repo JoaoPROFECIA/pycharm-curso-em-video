@@ -4,7 +4,13 @@ def escreva(msg):
     print(f'  {msg}')
     print('~' * tam)
 
+def linha():
+    tam = '-=' * 20
+    print(f'{tam}')
+
 
 #  Programa principal
 escreva('Teste')
 escreva('Curso de Python')
+
+linha()
