@@ -1,8 +1,8 @@
 def ficha(jog='<desconhecido>', gol=0):
     '''
     -> Exibe uma ficha de jogador/time
-    :para jog: Nome do jogador (str)
-    :para gol: Número de gols marcados (str > int)
+    :param jog: Nome do jogador (str)
+    :param gol: Número de gols marcados (str > int)
     :return: Uma ficha de jogador/time
     
     '''

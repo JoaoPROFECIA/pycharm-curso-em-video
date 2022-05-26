@@ -1,8 +1,8 @@
 def fatorial(n, show=False):
     '''
     -> Calcula o fatorial de um número.
-    :para n: O número a ser calculado
-    :para show: (opcional) Mostrar ou não a conta
+    :param n: O número a ser calculado
+    :param show: (opcional) Mostrar ou não a conta
     :return: O valor do fatorial de n
     '''
     f = 1
