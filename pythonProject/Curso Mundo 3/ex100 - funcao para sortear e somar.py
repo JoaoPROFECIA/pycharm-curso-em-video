@@ -44,12 +44,34 @@ def somaLista(lista):
     sleep(0.5)
 
 
+def maior(lista):
+    maior = lista[0]
+    for valor in lista:
+        if valor > maior:
+            maior = valor
+    print(f'O maior valor da lista é {maior}')
+    sleep(0.5)
+
+
+def menor(lista):
+    menor = lista[0]
+    for valor in lista:
+        if valor < menor:
+            menor = valor
+    print(f'O menor valor da lista é {menor}')
+    sleep(0.5)
+
+
 numeros = list()
 sorteia(numeros)
 linha30()
 somaPar(numeros)
 linha30()
 somaImpar(numeros)
+linha30()
+maior(numeros)
+linha30()
+menor(numeros)
 linha30()
 somaLista(numeros)
 linha30()
