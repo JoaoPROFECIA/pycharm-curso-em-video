@@ -27,12 +27,12 @@ def votoObrigatorio(ano=0):
     anoAtual = date.today().year
     idade = anoAtual - ano
     if idade < 16:
-        print(f'Com {idade} anos, não vota.')
+        return f'Com {idade} anos, não vota.'
     elif idade >= 16 and idade < 18 or idade > 65:
-        print(f'Com {idade} anos, vota opcional.')
+        return f'Com {idade} anos, vota opcional.'
     else:
-        print(f'Com {idade} anos, vota obrigatório.')
+        return f'Com {idade} anos, vota obrigatório.'
 
 
-votoObrigatorio(int(input('Digite o ano de nascimento: ')))
-
+nasc = int(input('Ano de nascimento: '))
+print(votoObrigatorio(nasc))
