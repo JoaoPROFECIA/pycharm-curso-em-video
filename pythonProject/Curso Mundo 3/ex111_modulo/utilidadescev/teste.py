@@ -1,6 +1,6 @@
 # Formatando Moedas em Python
 
-from ex111_modulo.utilidadescev import moeda
+from moeda import moeda
 
 p = float(input('Digite o preço: R$'))
 moeda.resumo(p, 20, 12)
