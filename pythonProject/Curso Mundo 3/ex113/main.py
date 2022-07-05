@@ -1,4 +1,4 @@
-from dados import leiaInt, leiaFloat
+from funcoes.dados import leiaInt, leiaFloat
 """
 Função que faz a leitura de um número inteiro e flutuante.
 """

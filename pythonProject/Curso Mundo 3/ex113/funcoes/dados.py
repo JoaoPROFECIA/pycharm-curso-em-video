@@ -34,4 +34,3 @@ def leiaFloat(msg):
             return 0
         else:
             return n
-
