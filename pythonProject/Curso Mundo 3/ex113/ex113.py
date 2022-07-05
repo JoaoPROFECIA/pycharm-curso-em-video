@@ -1,16 +1,8 @@
-def leiaInt(msg):
-    while True:
-        try:
-            n = int(input(msg))
-        except (ValueError, TypeError):
-            print('\033[31m[Erro] Digite um número inteiro válido.\033[m')
-            continue
-        except KeyboardInterrupt:
-            print('\n\033[31m[Erro] O usuário preferiu não digitar esse número.\033[m')
-            return 0
-        else:
-            return n
-
-
+from dados import leiaInt, leiaFloat
+"""
+Função que faz a leitura de um número inteiro e flutuante.
+"""
 num = leiaInt('Digite um número inteiro: ')
+real = leiaFloat('Digite um número real: ')
 print(f'Você acabou de digitar o número {num}')
+print(f'Você acabou de digitar o número {real}'.replace('.', ','))
