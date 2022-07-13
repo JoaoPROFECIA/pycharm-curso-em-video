@@ -1,4 +1,6 @@
 from lib.interface.funcoes import *
+import os
+import shutil
 
 def arquivoExiste(nome):
     try:
@@ -13,6 +15,10 @@ def arquivoExiste(nome):
 def criarArquivo(nome):
     try:
         a = open(nome, 'wt+')
+        #  mover arquivo para o diretorio atual
+        source = r'C:\Users\victo\OneDrive\Documentos\MeuProjetos\pycharm-curso-em-video\pythonProject\curso_mundo_3.txt'
+        destination = r'C:\Users\victo\OneDrive\Documentos\MeuProjetos\pycharm-curso-em-video\pythonProject\Curso Mundo 3\ex115\curso_mundo_3.txt'
+        shutil.move(source, destination)
         a.close()
     except:
         print('Houve um erro na criação do arquivo!')
